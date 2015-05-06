@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Example" id="Example:100" proto="xmlquest-2.0">
     <name>Example</name>
-    <task type="html" lang="en"><div>В <a href="static/file.txt">приложенном файле</a> находится ответ на вопрос жизни, вселенной и вообще. Назовите его.<br />Ответ начинается с "QCTF_".</div></task>
-    <task type="html" lang="ru"><div>В <a href="static/file.txt">приложенном файле</a> находится ответ на вопрос жизни, вселенной и вообще. Назовите его.<br />Ответ начинается с "QCTF_".</div></task>
+    <task type="html" lang="en"><div>В <a href="static/file.txt">приложенном файле</a> находится ответ на вопрос жизни, вселенной и вообще. Назовите его.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <task type="html" lang="ru"><div>В <a href="static/file.txt">приложенном файле</a> находится ответ на вопрос жизни, вселенной и вообще. Назовите его.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
     <checker strict="yes">
-        <solution case="insensitive">QCTF_42</solution>
+        <solution case="insensitive">QCTF42</solution>
     </checker>
 </quest>
