@@ -44,7 +44,7 @@ my $flag = $1;
 print $flag, "\n";
 
 
-open TASK, '>static/37990139aa413687902b7f96280c9f31/AAA!' or die "can't open AAA!: $!\n";
+open TASK, '>static/AAA!' or die "can't open AAA!: $!\n";
 print TASK "AAA AAAA AA AAAA! AAA AAAA AA AAA! AAA AAAA AA A! AAA AAAA AA AA A! ";
 print TASK "AA AAA ", $res{ord $_},  "! " for split //, $flag;
 print TASK "AA AAAA AA!";

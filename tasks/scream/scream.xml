@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Scream" id="Scream:100" proto="xmlquest-2.0">
     <name>Example</name>
-    <task type="html" lang="ru"><div>Мы попросили мегахакера Васю придумать флаг для таска. В ответ он прокричал <a href="static/37990139aa413687902b7f96280c9f31/AAA!">нечто нечленораздельное</a>. Помогите нам понять, что он имел ввиду.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <task type="html" lang="ru"><div>Мы попросили мегахакера Васю придумать флаг для таска. В ответ он прокричал <a href="static/AAA!">нечто нечленораздельное</a>. Помогите нам понять, что он имел ввиду.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
     <checker strict="yes">
         <solution case="insensitive">QCTF9uEFgMiPCCK271dhv</solution>
     </checker>
