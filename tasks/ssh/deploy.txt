@@ -1,5 +1,11 @@
-1. Cоздать пользователя qctf с шеллом, который выводит ответ QCTF_NOWYOUKNOWHOWSSHENCRYPTIONWORKS. (int main(){printf(...); return 0;}
-2. Дать права на шелл, чтобы он был доступен только пользователю qctf: chown qctf ...; chmod 500 ...
-2. Скопировать static/authorized_keys в /home/qctf/.ssh, где /home/qctf - домашний каталог
+1. Cоздать пользователя qctf с шеллом, который выводит ответ:
+   gcc -x c - <<< 'int main(){printf("QCTF_NOWYOUKNOWHOWSSHENCRYPTIONWORKS"); return 0;}' -o /usr/bin/qctf
+   useradd -s /usr/bin/qctf -m qctf
+2. Дать права на шелл, чтобы он был доступен только пользователю qctf: 
+   chown qctf:qctf /usr/bin/qctf
+   chmod 500 /usr/bin/qctf
+2. Скопировать static/authorized_keys в /home/qctf/.ssh, где /home/qctf - домашний каталог qctf'а
+   mkdir /home/qctf/.ssh
+   nano /home/qctf/.ssh/authorized_keys
 3. Запустить ssh
 4. Проверить, что всё работает: ssh -i solver/id qctf@ip
