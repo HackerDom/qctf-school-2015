@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="vim" id="vim:100" proto="xmlquest-2.0">
+    <name>VIM</name>
+    <task type="html" lang="ru"><div>Зайдите на ssh vim@.... Там вы найдёте файл с флагом. Но флаг слишком большой, поэтому нам будет достаточно узнать sha256 от файла с флагом.</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">4fc8aafae0f13025fe9037f9bb021536dba3b0146199d6d58effd41275b87744</solution>
+    </checker>
+</quest>
