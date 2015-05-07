@@ -1,0 +1,5 @@
+1. Cоздать пользователя qctf с шеллом, который выводит ответ QCTF_NOWYOUKNOWHOWSSHENCRYPTIONWORKS. (int main(){printf(...); return 0;}
+2. Дать права на шелл, чтобы он был доступен только пользователю qctf: chown qctf ...; chmod 500 ...
+2. Скопировать static/authorized_keys в /home/qctf/.ssh, где /home/qctf - домашний каталог
+3. Запустить ssh
+4. Проверить, что всё работает: ssh -i solver/id qctf@ip
