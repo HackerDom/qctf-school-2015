@@ -8,7 +8,6 @@ unsigned rand() {
 }
 
 int main() {
-	freopen("flag.txt", "w", stdout);
 	for (int i = 0; i < 500 * 1024 * 1024; ++i) {
 		int r = rand() % (126 - 32 + 1 + 1);
 		if (!r)
