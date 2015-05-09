@@ -1,11 +1,20 @@
-1. Cоздать пользователя school2015 с шеллом, который выводит ответ:
-   gcc -x c - <<< 'int main(){printf("QCTF_NOWYOUKNOWHOWSSHENCRYPTIONWORKS"); return 0;}' -o /usr/bin/qctf
-   useradd -s /usr/bin/qctf -m school2015
-2. Дать права на шелл, чтобы он был доступен только пользователю school2015: 
-   chown school2015:school2015 /usr/bin/qctf
-   chmod 500 /usr/bin/qctf
-2. Скопировать static/authorized_keys в /home/school2015/.ssh, где /home/school2015 — домашний каталог school2015'а
-   mkdir /home/school2015/.ssh
-   nano /home/school2015/.ssh/authorized_keys
-3. Запустить ssh
-4. Проверить, что всё работает: ssh -i solver/id school2015@IP
+0. Создать shell.c
+#include <stdio.h>
+
+int main()
+{
+    printf("QCTF_NOWYOUKNOWHOWSSHENCRYPTIONWORKS\n");
+    return 0;
+}
+1. Cоздать пользователя ssh2015 с шеллом, который выводит ответ:
+   gcc -x c -o shell shell.c
+   useradd -s /path/to/shell -m ssh2015
+2. Дать права на шелл, чтобы он был доступен только пользователю ssh2015: 
+   chown ssh2015:ssh2015 /path/to/shell
+   chmod 500 /path/to/shell
+2. Скопировать static/authorized_keys в /home/ssh2015/.ssh, где /home/ssh2015 — домашний каталог ssh2015'а
+   mkdir /home/ssh2015/.ssh
+   nano /home/ssh2015/.ssh/authorized_keys
+   chown -R ssh2015:ssh2015 /home/ssh2015/.ssh/
+3. (Пере)запустить ssh
+4. Проверить, что всё работает: ssh -i solver/id ssh2015@IP
