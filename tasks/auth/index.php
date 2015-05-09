@@ -27,9 +27,10 @@ if(!$authorized && isset($_GET["login"]) && isset($_GET["pass"])) {
 }
 
 if(!$authorized) {
-	echo "<form action='#'>Login: <input type='text' name='login' value='guest'><br>";
-	echo "Password: <input type='pass' name='pass' value='guest'><br>";
-	echo "<input type='submit'>";
+    echo "Very simple authentication form";
+	echo "<form action='#'>Login <input type='text' name='login' value='guest'><br>";
+	echo "Password <input type='pass' name='pass' value='guest'><br>";
+	echo "<input type='submit' value='Login'>";
 	echo "</form>";
 } else {
 	$auth = explode(":", base64_decode($_COOKIE["auth"]), 2);

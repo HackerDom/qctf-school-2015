@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="Auth" id="Auth:100" proto="xmlquest-2.0">
+    <name>Auth</name>
+    <task type="html" lang="en"><div>Login as admin at <a href="http://auth.qctf.ru">auth.qctf.ru</a>. <br />Answer starts with "QCTF" (without quotes).</div></task>
+    <task type="html" lang="ru"><div>Войдите под пользователем admin на <a href="http://auth.qctf.ru">auth.qctf.ru</a>. <br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">QCTF_QUICKBROWNFOX</solution>
+    </checker>
+</quest>
