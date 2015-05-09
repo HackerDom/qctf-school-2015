@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="PHP" id="PHP:100" proto="xmlquest-2.0">
+    <name>PHP</name>
+    <task type="html" lang="en"><div>Войдите под пользователем admin на http://x.x.x.x/task.php.</div></task>
+    <task type="html" lang="ru"><div>Войдите под пользователем admin на http://x.x.x.x/task.php.</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">QCTF_QUICKBROWNFOX</solution>
+    </checker>
+</quest>
