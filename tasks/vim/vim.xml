@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Vim" id="Vim:100" proto="xmlquest-2.0">
     <name>VIM</name>
-    <task type="html" lang="ru"><div>Зайдите по ssh на qctf.ru:10240 (обратите внимание на порт, он нестандартный). Логин vim, пароль vim. В домашней директории лежит файл с флагом. Сам флаг достаточно большой, поэтому нам будет достаточно получить значение хеша SHA-256 от этого файла.</div></task>
+    <task type="html" lang="ru"><div>Зайдите по ssh на qctf.ru:10240 (обратите внимание на нестандартный порт). Логин vim, пароль vim. В домашней директории лежит файл с флагом. Сам флаг достаточно большой, поэтому нам будет достаточно получить значение хеша SHA-256 от этого файла.</div></task>
     <checker strict="yes">
-        <solution case="insensitive">d6b365c14f525b0e718afcd76880ccd402449de79f431dfdf304229c49ad4311</solution>
+        <solution case="insensitive">26939d47d2157578f069483f79d003df95d8b505d9a794435d20898bbdd2d241</solution>
     </checker>
 </quest>
