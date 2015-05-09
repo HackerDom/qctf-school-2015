@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Smiles" id="Smiles:100" proto="xmlquest-2.0">
     <name>Smiles</name>
-    <task type="html" lang="ru"><div>Странная <a href="static/smiles.png">последовательность смайлов</a> пришла мне сегодня на телефон. А обещали, вроде, пароль скинуть..<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <task type="html" lang="ru"><div>I've got a strange <a href="static/smiles.png">smiles sequence</a> on my phone today. But I was expecting to get a password...<br />Answer starts with "QCTF" (without quotes).</div></task>
     <task type="html" lang="ru"><div>Странная <a href="static/smiles.png">последовательность смайлов</a> пришла мне сегодня на телефон. А обещали, вроде, пароль скинуть..<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
     <checker strict="yes">
         <solution case="insensitive">Your new password is: QCTF_mer33kle3wfp37hv</solution>
