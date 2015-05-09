@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Netdump" id="Netdump:100" proto="xmlquest-2.0">
     <name>Netdump</name>
-    <task type="html" lang="en"><div>We captured <a href="static/secret.pcap">network traffic</a> from task-developer's computer, looks like something interesting exists here.<br />Answer starts with «QCTF» (without quotes).</div></task>
+    <task type="html" lang="en"><div>We captured a <a href="static/secret.pcap">network traffic</a> from a task-developer's computer. Looks like something interesting exists here.<br />Answer starts with "QCTF" (without quotes).</div></task>
     <task type="html" lang="ru"><div>Мы записали <a href="static/secret.pcap">дамп трафика</a> с компьютера одного из разработчиков, нам кажется, там есть кое-что интересное.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
     <checker strict="yes">
         <solution case="insensitive">QCTF.ruHGYA3PCkoN</solution>
