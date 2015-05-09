@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="Lucky" id="Lucky:100" proto="xmlquest-2.0">
+    <name>I'm feeling lucky!</name>
+    <task type="html" lang="en">Truth is out there. Find the key. "Super secure ninjas LLC" will help you. I've heard they are about to launch a web site.<br />Answers starts with "QCTF" (without quotes).</task>
+    <task type="html" lang="ru">Истина где-то рядом. Найдите ключ. Компания «Super secure ninjas» поможет тебе. Я слышал, что они собираются запустить свой сайт.<br />Ответ начинается с «QCTF» (без кавычек).</task>
+    <checker strict="yes">
+        <solution case="insensitive">Your flag is QCTFICANFOUNDYOU</solution>
+        <solution case="insensitive">QCTFICANFOUNDYOU</solution>
+    </checker>
+</quest>

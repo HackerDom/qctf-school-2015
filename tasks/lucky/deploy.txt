@@ -1,0 +1,6 @@
+1. Выложить файл 554db69ccc948.mp3 на сервер (по адресу http://qctf.ru/static/554db69ccc948.mp3)
+2. По адресу http://goo.gl/ создать короткую ссылку
+3. Полученную ссылку прописать в whois домена supersecureninjas.com
+4. Через некоторое время проверить на https://who.is/whois/supersecureninjas.com, должно быть что-то вроде:
+        Registrant Name: goo.gl k0R2GJ
+        Registrant Organization: goo.gl k0R2GJ 
