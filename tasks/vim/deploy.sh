@@ -33,4 +33,4 @@ chown -R root:root "$JAIL"
 chmod -R a-w /home/services/school-2015/vim/jail/
 
 g++ -Wall -O2 gen.cpp -o gen
-./gen > "$JAIL"/home/vim/flag.txt
+./gen > "$JAIL"/home/vim/flag
