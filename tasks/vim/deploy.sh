@@ -1,24 +1,36 @@
 #!/bin/bash
 
-useradd -b /home -s /usr/bin/vim vim
+set -e
+set -x
+
+userdel vim
+useradd -b /home -s `which vim` vim
 echo -e "vim:vim" | chpasswd
 
-mkdir -p /var/jail/{dev,etc,lib,lib64,usr,bin}
-mkdir -p /var/jail/usr/bin
-mkdir -p /var/jail/home/vim
-mknod -m 666 /var/jail/dev/null c 1 3
+JAIL="/home/services/school-2015/vim/jail"
 
-cp /etc/ld.so.cache /var/jail/etc
-cp /etc/ld.so.conf /var/jail/etc
-cp /etc/nsswitch.conf /var/jail/etc
-cp /etc/hosts /var/jail/etc
+rm -r "$JAIL"
 
-cp /usr/bin/vim /var/jail/usr/bin
+mkdir "$JAIL"
+debootstrap --arch i386 sid "$JAIL" http://http.debian.net/debian/
+mkdir -p "$JAIL"/home/vim
 
-chmod +x l2chroot.sh
-./l2chroot.sh vim
+proc "$JAIL/proc proc defaults 0 0" >> /etc/fstab
+mount proc "$JAIL"/proc -t proc
+echo "sysfs $JAIL/sys sysfs defaults 0 0" >> /etc/fstab
+mount sysfs "$JAIL"/sys -t sysfs
 
-echo -e "\n\nMatch User vim\n\tChrootDirectory /var/jail/\n\tX11Forwarding no\n\tAllowTcpForwarding no" >> /etc/ssh/sshd_config
+cp /etc/hosts "$JAIL"/etc/hosts
+cp /etc/passwd "$JAIL"/etc/passwd
+cp /proc/mounts "$JAIL"/etc/mtab
 
-g++ -Wall -O2 gen.cpp
-./a.out > /var/jail/home/vim/flag.txt
+chroot "$JAIL" apt-get update
+chroot "$JAIL" apt-get install vim
+
+echo -e "\n\nMatch User vim\n\tChrootDirectory $JAIL\n\tX11Forwarding no\n\tAllowTcpForwarding no" >> /etc/ssh/sshd_config
+
+chown -R root:root "$JAIL"
+chmod -R a-w /home/services/school-2015/vim/jail/
+
+g++ -Wall -O2 gen.cpp -o gen
+./gen > "$JAIL"/home/vim/flag.txt
