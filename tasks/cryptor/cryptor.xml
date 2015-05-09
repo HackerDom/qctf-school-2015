@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="Cryptor" id="Cryptor:100" proto="xmlquest-2.0">
+    <name>Cryptor</name>
+    <task type="html" lang="en"><div>All files of one user have been encrypted. We have one <a href="static/diplom.docx">encrypted file</a> and <a href="static/crypter.exe">crypter-program</a> and me must help to decrypt files.<br />Answer starts with «QCTF» (without quotes).</div></task>
+    <task type="html" lang="ru"><div>К нам обратился опечаленный пользователь, файлы которого оказались зашифрованы. Используя <a href="static/diplom.docx">зашифрованный файл</a> и <a href="static/crypter.exe">программу-шифратор</a> помогите пользователю расшифровать этот важный файл.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">QCTFQzbvrOCpshoMwRHQ</solution>
+    </checker>
+</quest>
