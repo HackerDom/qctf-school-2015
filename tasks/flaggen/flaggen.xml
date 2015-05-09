@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<quest series="Misc" id="Misc:100" proto="xmlquest-2.0">
+<quest series="FlagGen" id="FlagGen:100" proto="xmlquest-2.0">
     <name>FlagGen</name>
-    <task type="html" lang="en">We got access to the FlagGen teamlead's mailbox, and found there a <a href="static/flaggen.eml">letter to developer</a>. Help us get the flag.</task>
-    <task type="html" lang="ru">Мы получили доступ к почтовому ящику тимлида FlagGen, и обнаружили там <a href="static/flaggen.eml">письмо разработчику</a>. Помогите нам получить флаг.</task>
+    <task type="html" lang="en">We got access to the FlagGen teamlead's mailbox, and found there a <a href="static/flaggen.eml">letter to developer</a>. Help us get the flag. <br />Answer starts with "QCTF" (without quotes).</task>
+    <task type="html" lang="ru">Мы получили доступ к почтовому ящику тимлида FlagGen, и обнаружили там <a href="static/flaggen.eml">письмо разработчику</a>. Помогите нам получить флаг. <br />Ответ начинается с «QCTF» (без кавычек).</task>
     <checker strict="yes">
         <solution case="insensitive">QCTF1A6D2AC2452F6FF1</solution>
     </checker>
