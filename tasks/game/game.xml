@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="Game" id="Game:100" proto="xmlquest-2.0">
+    <name>Game</name>
+    <task type="html" lang="en"><div>Эта <a href="static/game.zip">виртуальная машина</a> видела многое. А флаг?<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <task type="html" lang="ru"><div>Эта <a href="static/game.zip">виртуальная машина</a> видела многое. А флаг?<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">QCTF_89HCB92NW3J4A4F9R6F8D4KJEJK3B7GW</solution>
+    </checker>
+</quest>

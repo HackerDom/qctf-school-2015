@@ -1,0 +1,1 @@
+Прочитать файл static/game.zip, скачать архив, положить его в static/game.zip
