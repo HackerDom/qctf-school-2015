@@ -29,7 +29,7 @@ namespace RServer
 
 			try
 			{
-				var listener = new Listener(port, "/secret", numberOfThreads, OnContextAsync);
+				var listener = new Listener(port, null, numberOfThreads, OnContextAsync);
 				listener.Start();
 
 				log.InfoFormat("Server started listening on port {0}", port);
