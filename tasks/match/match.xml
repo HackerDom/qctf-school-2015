@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Match" id="Match:100" proto="xmlquest-2.0">
     <name>Match</name>
-    <task type="html" lang="en"><div>Мы приготовили для вас <a href="static/match.png">спичку</a>.<br />Ответ начинается с «QCTF» (без кавычек) и содержит 32 символа.</div></task>
+    <task type="html" lang="en"><div>We prepared the <a href="static/match.png">match</a> for you.<br />Answer starts with "QCTF" (without quotes) and contains 32 chars.</div></task>
     <task type="html" lang="ru"><div>Мы приготовили для вас <a href="static/match.png">спичку</a>.<br />Ответ начинается с «QCTF» (без кавычек) и содержит 32 символа.</div></task>
     <checker strict="yes">
         <solution case="insensitive">QCTF5MKANIO34ZGMYQX3QX9BDNVO16S1</solution>
