@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Botnet" id="Botnet:200" proto="xmlquest-2.0">
     <name>On the bottom</name>
-    <task type="html" lang="en">Hey pal! Tom has something sweet on his desktop. He recently sent some enlargement email with <a href="static/bot.exe">this attach</a>. Check it out, he has got a virus, hasn't he?</task>
-    <task type="html" lang="ru">Приятель! Я заметил у Тома на рабочем столе кое-что интересное. Он мне тут письмо прислал про увеличение, там ещё <a href="static/bot.exe">вложение</a> было. Глянь-ка, не вирус ли это он подхватил?</task>
+    <task type="html" lang="en">Hey pal! Tom has something sweet on his desktop. He recently sent some enlargement email with <a href="static/bot.exe">this attach</a>. Check it out, he has got a virus, hasn't he?<br />Answer starts with "QCTF" (without quotes).</task>
+    <task type="html" lang="ru">Приятель! Я заметил у Тома на рабочем столе кое-что интересное. Он мне тут письмо прислал про увеличение, там ещё <a href="static/bot.exe">вложение</a> было. Глянь-ка, не вирус ли это он подхватил?<br />Ответ начинается с «QCTF» (без кавычек).</task>
     <checker strict="yes">
         <solution case="insensitive">QCTF_RISE_OF_THE_BOTS</solution>
     </checker>
