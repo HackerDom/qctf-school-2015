@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="VeryLongFile" id="VeryLongFile:100" proto="xmlquest-2.0">
+    <name>Try to download it!</name>
+	<task type="html" lang="en">Try to download a file from <a href='http://olymp.ructf.org:1337/secret/'>here</a> and you'll get the answer!</task>
+    <task type="html" lang="ru">Попробуйте скачать файл <a href='http://olymp.ructf.org:1337/secret/'>отсюда</a> — и найдете флаг!</task>
+    <checker strict="yes">
+        <solution case="insensitive">QCTF_THISWASEASYIFYOUKNOWABOUTHTTPRANGEHEADER</solution>
+        <solution case="insensitive">QCTF_THISWASEASYIFYOUKNOWABOUTHTTPRANGEHEADER!!!</solution>
+    </checker>
+</quest>
