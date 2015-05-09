@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quest series="Smiles" id="Smiles:100" proto="xmlquest-2.0">
+    <name>Smiles</name>
+    <task type="html" lang="ru"><div>Странная <a href="static/smiles.jpg">последовательность смайлов</a> пришла мне сегодня на телефон. А обещали, вроде, пароль скинуть..<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <task type="html" lang="ru"><div>Странная <a href="static/smiles.jpg">последовательность смайлов</a> пришла мне сегодня на телефон. А обещали, вроде, пароль скинуть..<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
+    <checker strict="yes">
+        <solution case="insensitive">I send you a new password: QCTF_mer33kle3wfp37hv</solution>
+        <solution case="insensitive">QCTF_mer33kle3wfp37hv</solution>
+    </checker>
+</quest>
