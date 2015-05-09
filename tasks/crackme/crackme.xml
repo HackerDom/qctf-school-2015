@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <quest series="Crackme" id="Crackme:100" proto="xmlquest-2.0">
     <name>Crackme</name>
-    <task type="html" lang="en"><div>Have you hear about crackme? We prepared<a href="static/crackme.exe">this task</a> for you.<br />Answer starts with «QCTF» (without quotes).</div></task>
+    <task type="html" lang="en"><div>Have you heard about crackme? We prepared<a href="static/crackme.exe">this task</a> for you.<br />Answer starts with «QCTF» (without quotes).</div></task>
     <task type="html" lang="ru"><div>Вы ведь слышали о crackme? Мы подготовили для вас и <a href="static/crackme.exe">такое задание</a>.<br />Ответ начинается с «QCTF» (без кавычек).</div></task>
     <checker strict="yes">
         <solution case="insensitive">QCTFjnhFClg2sv3uaBBxs</solution>
